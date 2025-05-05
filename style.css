@@ -42,6 +42,7 @@
 
 body {
   background-image:url('assets/purple-pattern.jpg');
+  background-size: contain;
   /* background-color: white; */
   color: black;
   font-family: 'PixelOperator8', 'Courier New Bold', Courier, monospace;
