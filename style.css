@@ -1,9 +1,125 @@
 /* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
    HTML content. To learn how to do something, just try searching Google for questions like
    "how to change link color." */
+:root {
+  --main-color: #e9910d;
+  --main-alt-color: #5e3c0a;
+}
+
+  @font-face {
+    font-family: AddStandardBitMap;
+    src: url('/fonts/ADDSBP__.TTF');
+  }
+  @font-face {
+    font-family: PixelOperator8;
+    src: url('fonts/PixelOperator8.ttf');
+  }
+   * {
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .navbar {
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 
 body {
-  background-color: white;
+  background-image:url('assets/halftone-yellow.png');
+  /* background-color: white; */
   color: black;
-  font-family: Verdana;
+  font-family: 'PixelOperator8', 'Courier New Bold', Courier, monospace;
+  font-size: large;
+  max-width: 900px;
+  margin: 0 auto;
 }
+
+.flex {
+  display: flex;
+}
+
+#container a {
+  color: var(--main-alt-color);
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: var(--main-color);
+  /* navbar color */
+  width: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+.navbar li {
+  padding-top: 10px;
+}
+
+/* navigation links*/
+.navbar li a {
+  color: var(--main-alt-color);
+  /* navbar text color */
+  font-weight: 800;
+  text-decoration: none;
+  /* this removes the underline */
+}
+
+aside {
+  background-color: var(--main-alt-color);
+  width: 200px;
+  padding: 20px;
+  font-size: smaller;
+  /* this makes the sidebar text slightly smaller */
+}
+
+main {
+  background-color: var(--main-color);
+  flex: 1;
+  padding: 20px;
+}
+
+footer {
+  background-color: var(--main-alt-color);
+  /* background color for footer */
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  /* this centers the footer text */
+}
+
+@media screen and (max-width: 600px) {
+  .flex {
+    flex-wrap: wrap;
+}
+  .navbar {
+    width: 100%
+  }
+  aside {
+    width: 100%;
+}
+}
+
