@@ -41,7 +41,7 @@
   }
 
 body {
-  background-image:url('assets/halftone-yellow.png');
+  background-image:url('assets/purple-pattern.jpg');
   /* background-color: white; */
   color: black;
   font-family: 'PixelOperator8', 'Courier New Bold', Courier, monospace;
@@ -79,12 +79,17 @@ body {
 
 /* navigation links*/
 .navbar li a {
-  color: var(--main-alt-color);
+  color: black;
   /* navbar text color */
   font-weight: 800;
   text-decoration: none;
   /* this removes the underline */
 }
+
+.navbar li a:hover {
+        color: var(--main-alt-color);
+        text-decoration: underline;
+    }
 
 aside {
   background-color: var(--main-alt-color);
