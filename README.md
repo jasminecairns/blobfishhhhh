@@ -10,3 +10,12 @@ https://goblin-heart.net/sadgrl/learn/
 https://tenor.com/
 
 https://adriansblinkiecollection.neocities.org/
+
+### things i wanna add
+- working links in professional info
+- refine index text
+- blog !!!!!!!!
+- guestbook
+- make layout prettier :3c
+- shrines?
+- something unique
