@@ -19,3 +19,4 @@ https://adriansblinkiecollection.neocities.org/
 - make layout prettier :3c
 - shrines?
 - something unique
+- easter eggz ^_^
