@@ -41,7 +41,7 @@
   }
 
 body {
-  background-image:url('assets/purple-pattern.jpg');
+  background-image:url('assets/backgrounds/purple-pattern.jpg');
   background-size: contain;
   /* background-color: white; */
   color: black;
@@ -106,6 +106,12 @@ main {
   padding: 20px;
 }
 
+.rightSidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 footer {
   background-color: var(--main-alt-color);
   /* background color for footer */
@@ -116,6 +122,16 @@ footer {
   color: white;
   /* this centers the footer text */
 }
+
+.buttons {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+}
+
+.buttons img{
+  width:19%
+ }
 
 @media screen and (max-width: 600px) {
   .flex {
