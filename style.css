@@ -4,6 +4,8 @@
 :root {
   --main-color: #e9910d;
   --main-alt-color: #5e3c0a;
+  --secondary-color: #750194;
+  --secondary-alt-color: #2b092a;
 }
 
   @font-face {
@@ -13,6 +15,10 @@
   @font-face {
     font-family: PixelOperator8;
     src: url('fonts/PixelOperator8.ttf');
+  }
+  @font-face {
+    font-family: PixelOperator8-Bold;
+    src: url('fonts/PixelOperator-Bold.ttf');
   }
    * {
     box-sizing: border-box;
@@ -38,6 +44,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: var(--main-color);
+    /* navbar color */
   }
 
 body {
@@ -60,12 +69,6 @@ body {
   font-weight: bold;
 }
 
-.navbar {
-  background-color: var(--main-color);
-  /* navbar color */
-  width: 100%;
-}
-
 .navbar ul {
   display: flex;
   padding: 0;
@@ -75,7 +78,8 @@ body {
 }
 
 .navbar li {
-  padding-top: 10px;
+  display: flex;
+  align-self: center;
 }
 
 /* navigation links*/
@@ -128,10 +132,6 @@ footer {
   margin-bottom: 0.5em;
   margin-left: 0.5em;
 }
-
-.buttons img{
-  width:19%
- }
 
 @media screen and (max-width: 600px) {
   .flex {
