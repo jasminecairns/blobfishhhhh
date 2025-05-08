@@ -11,6 +11,8 @@ https://tenor.com/
 
 https://adriansblinkiecollection.neocities.org/
 
+https://cutekawaiiresources.wordpress.com/2018/07/17/onion-head-emoticons/
+
 ### things i wanna add
 - working links in professional info
 - refine index text
