@@ -11,7 +11,7 @@
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
   </head>
   <body>
-        <!-- SCM Music Player https://www.scmplayer.net -->
+        <!-- SCM Music Player https://www.scmplayer.net  removed cause its causing network / loading / accessilbility issues :( may add later with custom css or something)--> 
       <!-- <script type="text/javascript" src="https://www.scmplayer.net/script.js"  -->
       <!-- data-config="{'skin':'skins/scmOrange/skin.css','volume':50,'autoplay':false,'shuffle':false,'repeat':0,'placement':'top','showplaylist':false,'playlist':[{'title':'Orange Lounge','url':'https://youtu.be/8YFqxS87Kfg?si=y4IdmV1U9WOVmjx8'}]}" ></script> -->
       <!-- SCM Music Player script end -->
@@ -51,5 +51,19 @@
     </div>
     <footer id="footer">hi, i'm a footer!</footer>
   </body>
+
+<!-- https://stackoverflow.com/questions/16354122/how-to-put-scrolling-text-in-title-tag -->
+<script type='text/javascript'> 
+  title = "🧡 J ✨ C 🌟";
+  position = 0;
+  function scrolltitle() {
+      document.title = title.substring(position, title.length) + title.substring(0, position); 
+      position++;
+      if (position > title.length) position = 0;
+      titleScroll = window.setTimeout(scrolltitle,170);
+  }
+  scrolltitle();
+  </script>
+  
   
 </html>
