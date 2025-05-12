@@ -4,18 +4,19 @@
    :root {
     --main-color: #e9910d;
     --main-dark-color: #5e3c0a;
-    --secondary-color: #750194;
-    --secondary-dark1-color: #2a0829;
-    --secondary-dark2-color: #33003F;
-    --secondary-dark3-color: #590D73;
+    --secondary-color: #0D65E9;
+    --secondary-dark1-color: #0c143a;
+    --secondary-dark2-color: #001652;
+    --secondary-dark3-color: #01308d;
     --tertiary-color: #0de991;
     --red: #e9390d;
     --blue: #0D65E9;
-    --bg-image: url('assets/backgrounds/purple-pattern.jpg');
-    background-image: var(--bg-image);
+    --purple: #750194;
+    --bg-image: url('assets/backgrounds/blue-pattern.jpg');
+    background: var(--bg-image) var(--secondary-dark2-color);
     background-size: 50%;
     background-position: fixed;
-
+    background-size: contain;
     --header-image: url('https://media1.tenor.com/m/VJqYwn0A6P4AAAAC/exploding-cat-cat-blowing-up.gif');
   }
   
@@ -60,19 +61,18 @@
 you can add them directly to the <div id="header"></div> element! */
       background-image: var(--header-image);
       background-size: 100%;
+      background-position: center;
       margin-bottom: 0.5em;
       border:var(--secondary-color);
     border-style: dashed;
   }
   
   body {
-    background: var(--bg-image) var(--secondary-dark2-color);
-    background-size: contain;
     /* background-color: white; */
     color: black;
     font-family: 'PixelOperator8', 'Courier New Bold', Courier, monospace;
     font-size: large;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
   }
   
@@ -99,15 +99,13 @@ you can add them directly to the <div id="header"></div> element! */
   
   .navbar {
     list-style:none;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
     background-color: var(--main-color);
     border:var(--secondary-color);
     border-style: dashed;
     /* navbar color */
     padding: 1em;
+    width: fit-content;
+    margin-left:25%;
   }
   
   .navbar ul {
@@ -140,23 +138,23 @@ you can add them directly to the <div id="header"></div> element! */
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -60px;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
     opacity: 0;
     transition: opacity 0.3s;
   }
   
   .tooltip .tooltiptext::after {
-    content: "";
+    content: " ";
     position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #555 transparent transparent transparent;
-    visibility: hidden;
+    border-color: transparent var(--secondary-dark3-color) transparent transparent;
   }
   
   .tooltip:hover .tooltiptext {
@@ -171,14 +169,6 @@ you can add them directly to the <div id="header"></div> element! */
     border:var(--secondary-dark1-color);
     border-style: dashed;
   } */
-
-  #leftSidebar {
-    order: 1;
-}
-
-#rightSidebar {
-    order: 3;
-}
   
   aside {
     background-color: var(--main-dark-color);
@@ -219,9 +209,6 @@ you can add them directly to the <div id="header"></div> element! */
     .flex {
       flex-wrap: wrap;
   }
-    .navbar {
-      width: 100%
-    }
     aside {
       width: 100%;
   }
