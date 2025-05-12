@@ -11,6 +11,17 @@
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
   </head>
   <body>
+    <script> 
+      title = "🧡 J ✨ C 🌟";
+      position = 0;
+      function scrolltitle() {
+          document.title = title.substring(position, title.length) + title.substring(0, position); 
+          position++;
+          if (position > title.length) position = 0;
+          titleScroll = window.setTimeout(scrolltitle,170);
+      }
+      scrolltitle();
+      </script>
   <script>NekoType="fire"</script>
     <h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
     href="https://webneko.net">Neko</a></h1>
@@ -24,6 +35,7 @@
         
       <div class="flex">
         <aside class="leftSidebar">
+          <h5><span style="color: #ffffff;">this site is still very under construction! :3c </span></h5>
           <ul class="navbar">
             <li>
               <div class="tooltip"><a href="https://jc26.neocities.org/home"><span style='font-size:3em;'>⌂</span></a>
@@ -41,12 +53,12 @@
               </div>
             </li>
             <li>
-              <div class="tooltip"><a href="https://jc26.neocities.org/professional-info"><span style='font-size:3em;'>&#9993</span></a>
+              <div class="tooltip"><a href="https://jc26.neocities.org/professional-info"><span style='font-size:3em;'>✉</span></a>
               <span class="tooltiptext">professio -nal info</span>
               </div>
             </li>
             <li>
-              <div class="tooltip"><a href="https://jc26.neocities.org/now"><span style='font-size:3em;'>&#8252</span></a>
+              <div class="tooltip"><a href="https://jc26.neocities.org/now"><span style='font-size:3em;'>‼</span></a>
               <span class="tooltiptext">now</span>
               </div>
             </li>
@@ -55,10 +67,10 @@
         <main>
           <h1>hi! i'm jas! :D <img src="https://media.tenor.com/v94igzx3v-EAAAAi/bugcat-capoo.gif" alt="bugcat happy" height="50em"></h1>
           <!-- https://www.flaticon.com/free-icon/question_7734270?term=pixel%20question&page=1&position=3&origin=search&related_id=7734270 -->
-          <p><img src="/assets/emotes/question.png" alt="question mark" height="50em">i'm a 4th-year <span class="emphasis">computer science major</span> who is particularly interested in developing accessible and pleasing UX (big fan of React and NextJs).  i have also worked in the backend (Nodejs, Express, Python), as well as web and mobile frameworks (React Native, HTML, CSS, etc). this is only a small portion of my technical expertise! :3c</p>
+          <p><img src="/assets/emotes/question.png" alt="question mark" height="50">i'm a 4th-year <span class="emphasis">computer science major</span> who is particularly interested in developing accessible and pleasing UX (big fan of React and NextJs).  i have also worked in the backend (Nodejs, Express, Python), as well as web and mobile frameworks (React Native, HTML, CSS, etc). this is only a small portion of my technical expertise! :3c</p>
           <!-- https://www.flaticon.com/free-icon/weather-forecast_12414907?term=pixel%20computer&page=1&position=3&origin=search&related_id=12414907 -->
-          <p><img src="/assets/emotes/weather-forecast.png" alt="computer" height="50em">if you'd like to see more professional info about me, <a href="https://jc26.neocities.org/professional-info"> click here!</a> (or go to the "professional info tab!") <span class="emphasis"><i>i am also open to internships!</i></span></p>
-          <p><img src="/assets/emotes/stool.png" alt="stool" height="50em">on the other hand, i plan to share my art, games, other creations here!  i additionally want to run a blog of sorts where i just talk about whatever i want. you can also check my now page to see what i'm currently up to (in both a professional and casual sense) </p>
+          <p><img src="/assets/emotes/weather-forecast.png" alt="computer" height="50">if you'd like to see more professional info about me, <a href="https://jc26.neocities.org/professional-info"> click here!</a> (or go to the "professional info tab!") <span class="emphasis"><i>i am also open to internships!</i></span></p>
+          <p><img src="/assets/emotes/stool.png" alt="stool" height="50">on the other hand, i plan to share my art, games, other creations here!  i additionally want to run a blog of sorts where i just talk about whatever i want. you can also check my now page to see what i'm currently up to (in both a professional and casual sense) </p>
           <p>enjoy your stay! :D</p>
         </main>
         <aside class="rightSidebar">
@@ -79,17 +91,6 @@
     </div>
     <footer id="footer">hi, i'm a footer!</footer>
   </body>
-  <script type='text/javascript'> 
-  title = "🧡 J ✨ C 🌟";
-  position = 0;
-  function scrolltitle() {
-      document.title = title.substring(position, title.length) + title.substring(0, position); 
-      position++;
-      if (position > title.length) position = 0;
-      titleScroll = window.setTimeout(scrolltitle,170);
-  }
-  scrolltitle();
-  </script>
   
   
 </html>
