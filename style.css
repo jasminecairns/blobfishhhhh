@@ -8,6 +8,15 @@
     --secondary-dark1-color: #2a0829;
     --secondary-dark2-color: #33003F;
     --secondary-dark3-color: #590D73;
+    --tertiary-color: #0de991;
+    --red: #e9390d;
+    --blue: #0D65E9;
+    --bg-image: url('assets/backgrounds/purple-pattern.jpg');
+    background-image: var(--bg-image);
+    background-size: 50%;
+    background-position: fixed;
+
+    --header-image: url('https://media1.tenor.com/m/VJqYwn0A6P4AAAAC/exploding-cat-cat-blowing-up.gif');
   }
   
     @font-face {
@@ -40,9 +49,24 @@
       display: table;
       clear: both;
     }
+
+    .header {
+      width: 100%;
+      background-color: var(--secondary-dark2-color);
+      /* header color here! */
+      height: 150px;
+      /* this is only for a background image! */
+      /* if you want to put images IN the header, 
+you can add them directly to the <div id="header"></div> element! */
+      background-image: var(--header-image);
+      background-size: 100%;
+      margin-bottom: 0.5em;
+      border:var(--secondary-color);
+    border-style: dashed;
+  }
   
   body {
-    background: url('assets/backgrounds/purple-pattern.jpg') var(--secondary-dark2-color);
+    background: var(--bg-image) var(--secondary-dark2-color);
     background-size: contain;
     /* background-color: white; */
     color: black;
@@ -75,7 +99,6 @@
   
   .navbar {
     list-style:none;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -84,25 +107,14 @@
     border:var(--secondary-color);
     border-style: dashed;
     /* navbar color */
+    padding: 1em;
   }
   
   .navbar ul {
-    display: flex;
     padding: 0;
     margin: 0;
     list-style-type: none;
     justify-content: space-evenly;
-  }
-  
-  .navbar li {
-    display: flex;
-    align-self: center;
-  }
-  
-  .navbar li h2 {
-    display: flex;
-    align-self: center;
-    color: var(--secondary-dark3-color);
   }
   
   /* navigation links*/
@@ -113,11 +125,60 @@
     color: var(--secondary-dark2-color);
     /* this removes the underline */
   }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--secondary-dark3-color);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
   
-  .navbar li a:hover {
-          color: var(--secondary-less-dark-color);
-          text-decoration: underline;
-      }
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    visibility: hidden;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+      /*   
+  .rightSidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border:var(--secondary-dark1-color);
+    border-style: dashed;
+  } */
+
+  #leftSidebar {
+    order: 1;
+}
+
+#rightSidebar {
+    order: 3;
+}
   
   aside {
     background-color: var(--main-dark-color);
@@ -132,14 +193,6 @@
     flex: 1;
     padding: 20px;
     border:var(--secondary-color);
-    border-style: dashed;
-  }
-  
-  .rightSidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border:var(--secondary-dark1-color);
     border-style: dashed;
   }
   

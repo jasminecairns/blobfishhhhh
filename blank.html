@@ -1,6 +1,5 @@
-<!-- this has repeating components. theres probably a better way to do this but eh. works for now -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,24 +7,69 @@
     <!-- The style.css file allows you to change the look of your web pages.
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
+         <link rel="preload" as="style" href="/style.css">
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
   </head>
   <body>
-
-<!-- https://media.tenor.com/p4Sdvqt3j2UAAAAi/kitty-hi.gif -->
+  <script>NekoType="fire"</script>
+    <h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
+    href="https://webneko.net">Neko</a></h1>
+        <!-- SCM Music Player https://www.scmplayer.net  removed cause its causing network / loading / accessilbility issues :( may add later with custom css or something)--> 
+      <!-- <script type="text/javascript" src="https://www.scmplayer.net/script.js"  -->
+      <!-- data-config="{'skin':'skins/scmOrange/skin.css','volume':50,'autoplay':false,'shuffle':false,'repeat':0,'placement':'top','showplaylist':false,'playlist':[{'title':'Orange Lounge','url':'https://youtu.be/8YFqxS87Kfg?si=y4IdmV1U9WOVmjx8'}]}" ></script> -->
+      <!-- SCM Music Player script end -->
         <div class="row">
-          <ul class="navbar">
-            <li><h2><a href="https://jc26.neocities.org">home</a></h2></li>
-            <li><h2><a href="https://jc26.neocities.org/projects">projects</a></h2></li>
-            <li><h2><a href="https://jc26.neocities.org/blob">blog</a></h2></li>
-            <li><h2><a href="https://jc26.neocities.org/professional-info">professional<br> info</a></h2></li>
-            <li><h2><a href="https://jc26.neocities.org/now">now</a></h2></li>
-          </ul>
+          <div class="header"></div>
         </div>
+        
       <div class="flex">
+        <aside class="leftSidebar">
+          <ul class="navbar">
+            <li>
+              <div class="tooltip"><a href="https://jc26.neocities.org/home"><span style='font-size:3em;'>⌂</span></a>
+              <span class="tooltiptext">home (you're here!)</span>
+              </div>
+            </li>
+            <li>
+              <div class="tooltip"><a href="https://jc26.neocities.org/projects"><span style='font-size:3em;'>✎</span></a>
+              <span class="tooltiptext">projects</span>
+              </div>
+            </li>
+            <li>
+              <div class="tooltip"><a href="https://jc26.neocities.org/blog"><span style='font-size:3em;'>✍︎</span></a>
+              <span class="tooltiptext">blog</span>
+              </div>
+            </li>
+            <li>
+              <div class="tooltip"><a href="https://jc26.neocities.org/professional-info"><span style='font-size:3em;'>&#9993</span></a>
+              <span class="tooltiptext">professio -nal info</span>
+              </div>
+            </li>
+            <li>
+              <div class="tooltip"><a href="https://jc26.neocities.org/now"><span style='font-size:3em;'>&#8252</span></a>
+              <span class="tooltiptext">now</span>
+              </div>
+            </li>
+          </ul>
+        </aside>
         <main>
+          
         </main>
+
     </div>
+    <footer id="footer">hi, i'm a footer!</footer>
   </body>
-  <footer id="footer">hi, i'm a footer!</footer>
+  <script type='text/javascript'> 
+  title = "🧡 J ✨ C 🌟";
+  position = 0;
+  function scrolltitle() {
+      document.title = title.substring(position, title.length) + title.substring(0, position); 
+      position++;
+      if (position > title.length) position = 0;
+      titleScroll = window.setTimeout(scrolltitle,170);
+  }
+  scrolltitle();
+  </script>
+  
+  
 </html>
