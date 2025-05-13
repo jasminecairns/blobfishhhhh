@@ -12,7 +12,7 @@
     --red: #e9390d;
     --blue: #0D65E9;
     --purple: #750194;
-    --bg-image: url('assets/backgrounds/blue-pattern.jpg');
+    --bg-image: url('assets/backgrounds/blue2-pattern.jpg');
     background: var(--bg-image) var(--secondary-dark2-color);
     background-size: 50%;
     background-position: fixed;
@@ -82,6 +82,8 @@ you can add them directly to the <div id="header"></div> element! */
   
   .flex {
     display: flex;
+    border:var(--secondary-dark1-color);
+    border-style: dashed;
   }
   
   .emphasis {
@@ -203,6 +205,14 @@ you can add them directly to the <div id="header"></div> element! */
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     margin-left: 0.5em;
+  }
+
+  .status {
+    background-color: var(--main-color);
+    border:var(--secondary-color);
+    border-style: dashed;
+    padding: 1em;
+    
   }
   
   @media screen and (max-width: 600px) {
