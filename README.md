@@ -37,7 +37,7 @@ https://www.w3schools.com/howto/howto_css_tooltip.asp
     - when going to a different page, it reloads the whole page, which causes uncomfortable flashing if refreshed / loaded rapidly
     - loading is generally a little slow, but this is more forgivable due to this site being graphics heavy (and i won't change that :3)
 - scm music player issues (removed player for now)
-    - messes with routing somehow (loads content for differeent page despite not changing url)
+    - messes with routing somehow (loads content for different page despite not changing url)
     - accessibility issues (play, skip, player, etc. are not labeled)
     - loading issues (takes a long time to load)
 - youtube embed issues
