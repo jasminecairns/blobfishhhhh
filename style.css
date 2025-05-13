@@ -132,12 +132,11 @@ you can add them directly to the <div id="header"></div> element! */
   }
   .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
     background-color: var(--secondary-dark3-color);
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 5px 0;
+    padding: 5px 5px 5px 5px;
     position: absolute;
     z-index: 1;
     position: absolute;
@@ -214,6 +213,11 @@ you can add them directly to the <div id="header"></div> element! */
     padding: 1em;
     
   }
+
+  .project-section {
+    max-width: 450px;
+    margin-left: 20px;
+  }
   
   @media screen and (max-width: 600px) {
     .flex {
@@ -223,5 +227,7 @@ you can add them directly to the <div id="header"></div> element! */
       width: 100%;
   }
   }
+
+
   
   
