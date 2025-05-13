@@ -32,7 +32,7 @@ https://www.w3schools.com/howto/howto_css_tooltip.asp
 - hit counter
 - refine index text
 
-### know issues:
+### known issues:
 - loading issue
     - when going to a different page, it reloads the whole page, which causes uncomfortable flashing if refreshed / loaded rapidly
     - loading is generally a little slow, but this is more forgivable due to this site being graphics heavy (and i won't change that :3)
