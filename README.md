@@ -20,27 +20,34 @@ https://www.w3schools.com/howto/howto_css_tooltip.asp
 
 https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/
 
-
-
 ### things i wanna add
-- rebrand, likely
-~~- blog !!!!!!!!~~ it's empty but it's there
-- make layout prettier :3c
+- status.cafe
+- working rss feed
+- update box (also serves as rss feed)
+- ~~re-theming~~ (more or less done)
+- ~~blog !!!!!!!!~~ it's empty but it's there
+    - first actual blog post
+- make layout cooler :3c
+    - more graphics o yea (more or less done but could have have a bit more)
+- add art projects
+    - add info about oc / worldbuilding
 - shrines?
+- now page? (could substitute with status.cafe but idk)
 - something unique
-- more graphics o yea
 
 ### saving for end
-- working links in professional info
+- ~~working links in professional info~~ (pages no longer exists due to re-theming)
 - guestbook
+- github link (and other links that may be missing)
 - hit counter
 - refine index text
 
 ### known issues:
 - loading issue
     - when going to a different page, it reloads the whole page, which causes uncomfortable flashing if refreshed / loaded rapidly
-    - loading is generally a little slow, but this is more forgivable due to this site being graphics heavy (and i won't change that :3)
-- scm music player issues (removed player for now)
+        - attempted to resolve this by linking to html files instead of links, but this doesnt work. at least allows me to run this site locally
+    - loading is generally a little slow, but this is more forgivable due to this site being graphics heavy (and i want it to be graphics heaby :3)
+- scm music player issues (removed player for now, replaced with youtube embed)
     - messes with routing somehow (loads content for different page despite not changing url)
     - accessibility issues (play, skip, player, etc. are not labeled)
     - loading issues (takes a long time to load)

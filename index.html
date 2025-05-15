@@ -11,6 +11,8 @@
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/navbar.js" type="text/javascript" defer></script>
+    <link rel="alternate" type="application/rss+xml"
+      href="/feed.xml" title="RSS">
   </head>
   <body>
   <!-- SCM Music Player https://www.scmplayer.net . removed for now for causing too many issues-->
@@ -32,26 +34,32 @@ data-config="{'skin':'skins/scmOrange/skin.css','volume':50,'autoplay':false,'sh
     <h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
     href="https://webneko.net">Neko</a></h1>
         <header-component></header-component>
-        
+        <!-- idk what to do with this other than decoration lol -->
       <div class="flex">
         <aside class="leftSidebar">
           <span style="color:white">this site is still very under construction :3</span>
-          <div class="statusContainer" style="overflow-y: scroll; width:150px; height: 150px; background-image: var(--main-bg-image); border:var(--secondary-color); border-style: dashed;">
-            <p>i'm feeling<a href="https://www.imood.com/users/jc26"><img src="https://moods.imood.com/display/uname-jc26/fg-000000/bg-#e9910/imood.gif" alt="The current mood of jc26 at www.imood.com" border="0"></a></p>
-            <p>the internet is feeling<a href="https://www.imood.com/imood"><img src="https://moods.imood.com/internet/current.gif"  alt="The current mood of the Internet at www.imood.com" border="0"></a></p>
+          <div class="statusContainer">
+            <p>updates will go here meow</p>
+            <p>i'm not sure why i decided to set the navbar on fire but it is and it looks cool</p>
+          </div>
+              <navbar-component></navbar-component>
+            <div class="statusContainer">
+              <p>i'm feeling<a href="https://www.imood.com/users/jc26"><img src="https://moods.imood.com/display/uname-jc26/fg-000000/bg-#e9910/imood.gif" alt="The current mood of jc26 at www.imood.com" border="0"></a></p>
+              <p>the internet is feeling<a href="https://www.imood.com/imood"><img src="https://moods.imood.com/internet/current.gif"  alt="The current mood of the Internet at www.imood.com" border="0"></a></p>
             </div>
-          <navbar-component></navbar-component>
-          <div class="statusContainer" style=" width:150px; height: 150px; border:var(--secondary-color); border-style: dashed;">
+            <div class="statusContainer">
             guestbook goes here
             </div>
         </aside>
         <main>
-          <h1>hi! i'm jas! :D</h1>
-          <p><img src="/assets/emotes/question.png" alt="question mark" height="50">i'm a 4th-year <span class="emphasis">computer science major</span> who is particularly interested in developing accessible and pleasing ux.  i have also worked in backend development, as well as with web and mobile frameworks. <span class="emphasis"> this site is a simpler, cozier, and personal contrast to my usual work:</span> i only use html, css, and js. no fancy frameworks, just pure <span style="color:#530006; font-weight: bold;">love! :3</span></p>
+          <h1>hi! i'm a simple blobfish 🐠</h1>
+          <p><img src="assets/dividers/rainbowchangedivider.gif" alt="rainbow divider"></p>
+          <p><img src="/assets/emotes/question.png" alt="question mark" height="50">i'm a 4th-year <span class="emphasis">computer science major</span> who is particularly interested in developing accessible and visually pleasing ux.  i have also worked in backend development, as well as with web and mobile frameworks. <span class="emphasis"> this site is a simpler, cozier, and personal contrast to my usual work:</span> i only use html, css, and js. no fancy frameworks, just pure <span style="color:#530006; font-weight: bold;">love! :3</span></p>
           <p><img src="/assets/emotes/weather-forecast.png" alt="computer that shows weather forecast" height="50">(if you want to check out my school projects and other coding stuff, take a look at my <a href="./not_found.html">github!</a> you can also find <a href="./not_found.html">site updates</a> there!)</p>
           <p><img src="/assets/emotes/stool.png" alt="stool" height="50">here, i plan to show my more creative side, such as my <a href="/projects.html">art, games, and other creations!</a> i additionally wish to run a <a href="/blog.html">blog</a> of sorts where i just talk about whatever i want. i might add some shrines and other cool things in the future, we’ll have to see!</p>
             enjoy your stay! :D
           <p><img src="https://media1.tenor.com/m/3Ooug_u-02QAAAAC/silly-dog-exploding-so-silly.gif" alt="dog hit by green screen missile" height="150"></p>
+          <p><img src="assets/dividers/rainbowchangedivider.gif" alt="rainbow divider"></p>
         </main>
         <aside class="rightSidebar">
           <button id="toro" style="background-color: var(--main-dark-color); border-color: var(--main-dark-color);">
@@ -69,23 +77,26 @@ data-config="{'skin':'skins/scmOrange/skin.css','volume':50,'autoplay':false,'sh
             <img src="assets/buttons/emoticons.gif" alt="blinkie showing various emoticons, and then shows text saying i support emotiocons">
             <img src="assets/buttons/fishing.gif" alt="blinkie that says i rather be fishing. a fishbone is on the left">
             <a href="http://www.hat.net/abs/noclick/" ><img src="assets/buttons/noclick.gif" alt="[Don't click here!]" ></a>
+            <img src="assets/buttons/pepsi.gif" alt="this site is best viewed with PEPSI">
           </div>
-          <div class="music" style="color: white;">
-            <p>cool music you should check out</p>
+          <div class="music">
+            <p style="color:white">cool music you should check out</p>
             <!-- probably not a good idea to hard code the width but it works for now -->
              <!-- also wanna adjust volume but too lazy to set up script for that rn -->
-            <iframe width="170px" style="border:var(--secondary-color); border-style: dashed;" title="youtube"
+            <iframe width="220px" style="border:var(--secondary-color); border-style: dashed;" title="youtube"
             src="https://www.youtube.com/embed/8YFqxS87Kfg">
             </iframe> 
-            <p>previously shown music: </p>
-            <div class="statusContainer" style="overflow-y: scroll; width:150px; height: 150px; border:var(--secondary-color); border-style: dashed; background-color: var(--main-color); background-image: var(--main-bg-image); color: black;">
+            <p style="color:white">previously shown music: </p>
+            <div class="statusContainer">
               none yet
               </div>
           </div>
           
         </aside>
     </div>
-    <footer id="footer"> <a href="https://jc26.neocities.org/404"><img src="/assets/emotes/github-mark.png" alt="Site updates via Github" height="25px"></a></footer>
+    <footer id="footer" style="display: flex; align-items: center; justify-content: center; background: #e9910d;background: linear-gradient(180deg,#e9910d 0%, #e9390d 100%);"> 
+      <a href="https://jc26.neocities.org/404"><img src="/assets/emotes/github-mark.png" alt="Site updates via Github" height="30px"></a>
+    </footer>
   </body>
   <script>
     var audio = document.getElementById("myAudio");

@@ -4,6 +4,7 @@ navbarTemplate.innerHTML = `
     <style>    
           .navbar {
             list-style:none;
+            list-style-type: none;
             background-color: var(--main-color);
             background-image: var(--main-bg-image);
             border:var(--secondary-color);
@@ -11,12 +12,13 @@ navbarTemplate.innerHTML = `
             /* navbar color */
             padding: 1em;
             width: fit-content;
-            margin-left:25%;
         }
         
         .navbar ul {
+
             padding: 0;
             margin: 0;
+            list-style:none;
             list-style-type: none;
             justify-content: space-evenly;
         }
@@ -68,6 +70,8 @@ navbarTemplate.innerHTML = `
         }
     
     </style>
+    <div style="display: flex;">
+    <img src="assets/dividers/blue-divider-short.gif" alt="blue flames" style="margin-bottom: 15px; margin-left: 50px; margin-top: 5px;">
         <ul class="navbar">
             <li>
               <div class="tooltip"><a href="/index.html"><span style='font-size:3em;'>⌂</span></a>
@@ -90,6 +94,8 @@ navbarTemplate.innerHTML = `
               </div>
             </li>
           </ul>
+          <img src="assets/dividers/blue-divider-short-flipped.gif" alt="blue fames" style="margin-bottom: 15px; margin-top: 5px;">
+          </div>
 `;
 
 class Navbar extends HTMLElement {

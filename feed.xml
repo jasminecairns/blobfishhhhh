@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <atom:link href="https://jc26.neocities.org/feed.xml" rel="self" type="application/rss+xml" />
+        <title>blobfish hours</title>
+        <link>https://jc26.neocities.org/</link>
+        <description>personal blog of stuff and things</description>
+        <language>en-us</language>
+            <item>
+                <title>homepage</title>
+                <pubDate>Thu, 15 May 2025 07:52:00 EST</pubDate>
+                <link>https://jc26.neocities.org/</link>
+                <guid>https://jc26.neocities.org/</guid>
+                <description>rss test :3 leads to homepage. hope this works!</description>
+            </item>
+    </channel>
+</rss>

@@ -14,7 +14,7 @@
     --purple: #750194;
     --bg-image: url('assets/backgrounds/blue2-pattern.jpg');
     background: var(--bg-image) var(--secondary-dark2-color);
-    --main-bg-image: url('assets/backgrounds/OSK8PA0.jpg');
+    --main-bg-image: url('assets/backgrounds/OSK8PA02.jpg');
     background-size: 50%;
     background-position: fixed;
     background-size: contain;
@@ -65,17 +65,18 @@
   
   body h1 {
     color: var(--secondary-dark3-color);
+    transition: color 1s;
+  }
+
+  body h1:hover {
+    color: var(--red);
   }
   
   .flex {
     display: flex;
-    border:var(--secondary-dark1-color);
-    border-style: dashed;
-  }
-  
-  .emphasis {
-    color: var(--secondary-dark2-color);
-    font-weight: bold;
+    border-left:var(--secondary-dark1-color);
+    border-left-style: dashed;
+    border-right-style: dashed;
   }
 
   main {
@@ -86,7 +87,23 @@
     border:var(--secondary-color);
     border-style: dashed;
   }
+
+  main a {
+    color: var(--secondary-dark2-color);
+  }
   
+  main a:hover {
+    color: var(--secondary-dark3-color);
+  }
+
+  aside {
+    background-color: var(--main-dark-color);
+    width: 250px;
+    padding: 20px;
+    font-size: smaller;
+    /* this makes the sidebar text slightly smaller */
+  }
+
   footer {
     background-color: var(--main-dark-color);
     /* background color for footer */
@@ -100,21 +117,12 @@
     border-style: dashed;
   }
   
-  main a {
+  .emphasis {
     color: var(--secondary-dark2-color);
-  }
-  
-  main a:hover {
-    color: var(--secondary-dark3-color);
+    font-weight: bold;
   }
 
-  aside {
-    background-color: var(--main-dark-color);
-    width: 200px;
-    padding: 20px;
-    font-size: smaller;
-    /* this makes the sidebar text slightly smaller */
-  }
+
   
   .buttons {
     margin-top: 0.5em;
@@ -122,16 +130,18 @@
     margin-left: 0.5em;
   }
 
-  .status {
-    background-color: var(--main-color);
-    border:var(--secondary-color);
-    border-style: dashed;
-    padding: 1em;
-    
+  .statusContainer {
+    overflow-y: scroll; 
+    width:200px; 
+    height: 200px; 
+    background-image: var(--main-bg-image); 
+    border:var(--secondary-color); 
+    border-style: dashed; 
+    margin-top: 20px;
   }
 
   .project-section {
-    max-width: 450px;
+    max-width: 400px;
     margin-left: 20px;
   }
   
