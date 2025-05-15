@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨J C✨ </title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+         <link rel="preload" as="style" href="/style.css">
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/navbar.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+  <script>NekoType="fire"</script>
+    <h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
+    href="https://webneko.net">Neko</a></h1>
+        <!-- SCM Music Player https://www.scmplayer.net  removed cause its causing network / loading / accessilbility issues :( may add later with custom css or something)--> 
+      <!-- <script type="text/javascript" src="https://www.scmplayer.net/script.js"  -->
+      <!-- data-config="{'skin':'skins/scmOrange/skin.css','volume':50,'autoplay':false,'shuffle':false,'repeat':0,'placement':'top','showplaylist':false,'playlist':[{'title':'Orange Lounge','url':'https://youtu.be/8YFqxS87Kfg?si=y4IdmV1U9WOVmjx8'}]}" ></script> -->
+      <!-- SCM Music Player script end -->
+        <header-component></header-component>
+        
+      <div class="flex">
+        <aside class="leftSidebar">
+          <navbar-component></navbar-component>
+        </aside>
+        <main>
+          <div style="overflow-y: scroll; height:400px;">
+                <section class="blog-post">
+                    <h1>
+                        <img src="assets/emotes/sparkle.webp" alt="sparkly eyes"> 
+                    </h1>
+
+                   <p>text to show this is scrollable</p>
+                   <p>text to show this is scrollable</p>
+                   <p>text to show this is scrollable</p>
+                   <p>text to show this is scrollable</p>
+                   <p>text to show this is scrollable</p>
+                   <p>text to show this is scrollable</p>
+                   <p>text to show this is scrollable</p>
+                   <p>text to show this is scrollable</p>
+                   <p>text to show this is scrollable</p>
+                   <p>text to show this is scrollable</p>
+                   <p>text to show this is scrollable</p>
+                </section>
+                <!-- date, title -->
+                 <!-- body -->
+
+            </div>
+        </main>
+
+    </div>
+    <footer id="footer">hi, i'm a footer!</footer>
+  </body>
+  <script type='text/javascript'> 
+  title = "🧡 J ✨ C 🌟";
+  position = 0;
+  function scrolltitle() {
+      document.title = title.substring(position, title.length) + title.substring(0, position); 
+      position++;
+      if (position > title.length) position = 0;
+      titleScroll = window.setTimeout(scrolltitle,170);
+  }
+  scrolltitle();
+  </script>
+  
+  
+</html>

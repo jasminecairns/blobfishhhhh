@@ -9,6 +9,8 @@
          This makes it easier to make new pages for your site. -->
          <link rel="preload" as="style" href="/style.css">
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/navbar.js" type="text/javascript" defer></script>
   </head>
   <body>
   <!-- SCM Music Player https://www.scmplayer.net . removed for now for causing too many issues-->
@@ -29,59 +31,29 @@ data-config="{'skin':'skins/scmOrange/skin.css','volume':50,'autoplay':false,'sh
   <script>NekoType="fire"</script>
     <h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
     href="https://webneko.net">Neko</a></h1>
-        <div class="row">
-          <div class="header"></div>
-        </div>
+    <header-component></header-component>
         
-      <div class="flex">
-        <aside class="leftSidebar">
-          <h5><span style="color: #ffffff;">this site is still very under construction! :3c </span></h5>
-          <ul class="navbar">
-            <li>
-              <div class="tooltip"><a href="https://jc26.neocities.org/"><span style='font-size:3em;'>⌂</span></a>
-              <span class="tooltiptext">home</span>
-              </div>
-            </li>
-            <li>
-              <div class="tooltip"><a href="https://jc26.neocities.org/projects"><span style='font-size:3em;'>✎</span></a>
-              <span class="tooltiptext">projects (you're here!)</span>
-              </div>
-            </li>
-            <li>
-              <div class="tooltip"><a href="https://jc26.neocities.org/blog"><span style='font-size:3em;'>✍︎</span></a>
-              <span class="tooltiptext">blog</span>
-              </div>
-            </li>
-            <li>
-              <div class="tooltip"><a href="https://jc26.neocities.org/professional-info"><span style='font-size:3em;'>✉</span></a>
-              <span class="tooltiptext">professional info</span>
-              </div>
-            </li>
-            <li>
-              <div class="tooltip"><a href="https://jc26.neocities.org/now"><span style='font-size:3em;'>‼</span></a>
-              <span class="tooltiptext">now</span>
-              </div>
-            </li>
-          </ul>
+    <div class="flex">
+      <aside class="leftSidebar">
+        <navbar-component></navbar-component>
         </aside>
         <main>
           <div class="projects" style="display: flex; flex-direction: row; flex-grow: 2; flex-wrap: wrap;">
             <section class="project-section">
-              <a href="https://jc26.neocities.org/projects/games"><h1>games</h1></a>
+              <a href="games.html"><h1>games</h1></a>
               <h2>title of latest thing. below is image to its page (placeholder)</h2>
-              <a href="https://jc26.neocities.org/projects/games/blah"><img src="assets/emotes/bugcat-capoo.gif"></a>
+              <a href="not_found.html"><img src="assets/emotes/bugcat-capoo.gif" alt="placeholder image of bugcat jumping"></a>
             </section>
             <section class="project-section">
               <a href="https://jc26.neocities.org/projects/art"><h1>art</h1></a>
               <h2>title of latest thing. below is image to its page (placeholder)</h2>
-              <a href="https://jc26.neocities.org/projects/art/blah"><img src="assets/emotes/bugcat-capoo.gif"></a>
+              <a href="not_found.html"><img src="assets/emotes/bugcat-capoo.gif" alt="placeholder image of bugcat jumping"></a>
             </section>
             <section class="project-section">
               <a href="https://jc26.neocities.org/projects/other-stuff"><h1>other stuff</h1></a>
               <h2>title of latest thing. below is image to its page (placeholder)</h2>
-              <a href="https://jc26.neocities.org/projects/other-stuff/blah"><img src="assets/emotes/bugcat-capoo.gif"></a>
+              <a href="not_found.html"><img src="assets/emotes/bugcat-capoo.gif" alt="placeholder image of bugcat jumping"></a>
             </section>
-            <p>if you want more coding stuff, check out the <a href="https://jc26.neocities.org/professional-info">professional info page!</a></p>
           </div>
         </main>
     </div>

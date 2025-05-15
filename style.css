@@ -14,6 +14,7 @@
     --purple: #750194;
     --bg-image: url('assets/backgrounds/blue2-pattern.jpg');
     background: var(--bg-image) var(--secondary-dark2-color);
+    --main-bg-image: url('assets/backgrounds/OSK8PA0.jpg');
     background-size: 50%;
     background-position: fixed;
     background-size: contain;
@@ -51,21 +52,7 @@
       clear: both;
     }
 
-    .header {
-      width: 100%;
-      background-color: var(--secondary-dark2-color);
-      /* header color here! */
-      height: 150px;
-      /* this is only for a background image! */
-      /* if you want to put images IN the header, 
-you can add them directly to the <div id="header"></div> element! */
-      background-image: var(--header-image);
-      background-size: 100%;
-      background-position: center;
-      margin-bottom: 0.5em;
-      border:var(--secondary-color);
-    border-style: dashed;
-  }
+
   
   body {
     /* background-color: white; */
@@ -90,97 +77,10 @@ you can add them directly to the <div id="header"></div> element! */
     color: var(--secondary-dark2-color);
     font-weight: bold;
   }
-  
-  main a {
-    color: var(--secondary-dark2-color);
-  }
-  
-  main a:hover {
-    color: var(--secondary-dark3-color);
-  }
-  
-  .navbar {
-    list-style:none;
-    background-color: var(--main-color);
-    border:var(--secondary-color);
-    border-style: dashed;
-    /* navbar color */
-    padding: 1em;
-    width: fit-content;
-    margin-left:25%;
-  }
-  
-  .navbar ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    justify-content: space-evenly;
-  }
-  
-  /* navigation links*/
-  .navbar li a {
-    /* navbar text color */
-    font-weight: 800;
-    text-decoration: none;
-    color: var(--secondary-dark2-color);
-    /* this removes the underline */
-  }
 
-  .tooltip {
-    position: relative;
-    display: inline-block;
-  }
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    background-color: var(--secondary-dark3-color);
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 5px 5px 5px;
-    position: absolute;
-    z-index: 1;
-    position: absolute;
-    z-index: 1;
-    top: -5px;
-    left: 105%;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  
-  .tooltip .tooltiptext::after {
-    content: " ";
-    position: absolute;
-    top: 50%;
-    right: 100%; /* To the left of the tooltip */
-    margin-top: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent var(--secondary-dark3-color) transparent transparent;
-  }
-  
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-  }
-      /*   
-  .rightSidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border:var(--secondary-dark1-color);
-    border-style: dashed;
-  } */
-  
-  aside {
-    background-color: var(--main-dark-color);
-    width: 200px;
-    padding: 20px;
-    font-size: smaller;
-    /* this makes the sidebar text slightly smaller */
-  }
-  
   main {
     background-color: var(--main-color);
+    background-image: var(--main-bg-image);
     flex: 1;
     padding: 20px;
     border:var(--secondary-color);
@@ -198,6 +98,22 @@ you can add them directly to the <div id="header"></div> element! */
     /* this centers the footer text */
     border:var(--secondary-dark1-color);
     border-style: dashed;
+  }
+  
+  main a {
+    color: var(--secondary-dark2-color);
+  }
+  
+  main a:hover {
+    color: var(--secondary-dark3-color);
+  }
+
+  aside {
+    background-color: var(--main-dark-color);
+    width: 200px;
+    padding: 20px;
+    font-size: smaller;
+    /* this makes the sidebar text slightly smaller */
   }
   
   .buttons {

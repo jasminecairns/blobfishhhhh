@@ -9,6 +9,8 @@
          This makes it easier to make new pages for your site. -->
          <link rel="preload" as="style" href="/style.css">
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/navbar.js" type="text/javascript" defer></script>
   </head>
   <body>
   <!-- SCM Music Player https://www.scmplayer.net . removed for now for causing too many issues-->
@@ -29,60 +31,26 @@ data-config="{'skin':'skins/scmOrange/skin.css','volume':50,'autoplay':false,'sh
   <script>NekoType="fire"</script>
     <h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
     href="https://webneko.net">Neko</a></h1>
-        <div class="row">
-          <div class="header"></div>
-        </div>
+        <header-component></header-component>
         
       <div class="flex">
         <aside class="leftSidebar">
-          <h5><span style="color: #ffffff;">this site is still very under construction! :3c </span></h5>
-          <div class="statusContainer" style="overflow-y: scroll; width:150px; height: 150px; border:var(--secondary-color); border-style: dashed;">
-            <section class="status">
-              <h1>
-                5/12/25:
-            </h1>
-              <p>meow this is a status </p>
-              </section>
+          <span style="color:white">this site is still very under construction :3</span>
+          <div class="statusContainer" style="overflow-y: scroll; width:150px; height: 150px; background-image: var(--main-bg-image); border:var(--secondary-color); border-style: dashed;">
+            <p>i'm feeling<a href="https://www.imood.com/users/jc26"><img src="https://moods.imood.com/display/uname-jc26/fg-000000/bg-#e9910/imood.gif" alt="The current mood of jc26 at www.imood.com" border="0"></a></p>
+            <p>the internet is feeling<a href="https://www.imood.com/imood"><img src="https://moods.imood.com/internet/current.gif"  alt="The current mood of the Internet at www.imood.com" border="0"></a></p>
             </div>
-          <ul class="navbar">
-            <li>
-              <div class="tooltip"><a href="https://jc26.neocities.org/"><span style='font-size:3em;'>⌂</span></a>
-              <span class="tooltiptext">home (you're here!)</span>
-              </div>
-            </li>
-            <li>
-              <div class="tooltip"><a href="https://jc26.neocities.org/projects"><span style='font-size:3em;'>✎</span></a>
-              <span class="tooltiptext">projects</span>
-              </div>
-            </li>
-            <li>
-              <div class="tooltip"><a href="https://jc26.neocities.org/blog"><span style='font-size:3em;'>✍︎</span></a>
-              <span class="tooltiptext">blog</span>
-              </div>
-            </li>
-            <li>
-              <div class="tooltip"><a href="https://jc26.neocities.org/professional-info"><span style='font-size:3em;'>✉</span></a>
-              <span class="tooltiptext">professional info</span>
-              </div>
-            </li>
-            <li>
-              <div class="tooltip"><a href="https://jc26.neocities.org/now"><span style='font-size:3em;'>‼</span></a>
-              <span class="tooltiptext">now</span>
-              </div>
-            </li>
-          </ul>
+          <navbar-component></navbar-component>
           <div class="statusContainer" style=" width:150px; height: 150px; border:var(--secondary-color); border-style: dashed;">
             guestbook goes here
             </div>
         </aside>
         <main>
           <h1>hi! i'm jas! :D</h1>
-          <!-- https://www.flaticon.com/free-icon/question_7734270?term=pixel%20question&page=1&position=3&origin=search&related_id=7734270 -->
-          <p><img src="/assets/emotes/question.png" alt="question mark" height="50">i'm a 4th-year <span class="emphasis">computer science major</span> who is particularly interested in developing accessible and pleasing UX (big fan of React and NextJs).  i have also worked in the backend (Nodejs, Express, Python), as well as web and mobile frameworks (React Native, HTML, CSS, etc). this is only a small portion of my technical expertise! :3c</p>
-          <!-- https://www.flaticon.com/free-icon/weather-forecast_12414907?term=pixel%20computer&page=1&position=3&origin=search&related_id=12414907 -->
-          <p><img src="/assets/emotes/weather-forecast.png" alt="computer" height="50">if you'd like to see more professional info about me, <a href="https://jc26.neocities.org/professional-info"> click here!</a> (or go to the "professional info tab!") <span class="emphasis"><i>i am also open to internships!</i></span></p>
-          <p><img src="/assets/emotes/stool.png" alt="stool" height="50">on the other hand, i plan to share my art, games, other creations here!  i additionally want to run a blog of sorts where i just talk about whatever i want. you can also check my now page to see what i'm currently up to (in both a professional and casual sense) </p>
-          <p>enjoy your stay! :D</p>
+          <p><img src="/assets/emotes/question.png" alt="question mark" height="50">i'm a 4th-year <span class="emphasis">computer science major</span> who is particularly interested in developing accessible and pleasing ux.  i have also worked in backend development, as well as with web and mobile frameworks. <span class="emphasis"> this site is a simpler, cozier, and personal contrast to my usual work:</span> i only use html, css, and js. no fancy frameworks, just pure <span style="color:#530006; font-weight: bold;">love! :3</span></p>
+          <p><img src="/assets/emotes/weather-forecast.png" alt="computer that shows weather forecast" height="50">(if you want to check out my school projects and other coding stuff, take a look at my <a href="./not_found.html">github!</a> you can also find <a href="./not_found.html">site updates</a> there!)</p>
+          <p><img src="/assets/emotes/stool.png" alt="stool" height="50">here, i plan to show my more creative side, such as my <a href="/projects.html">art, games, and other creations!</a> i additionally wish to run a <a href="/blog.html">blog</a> of sorts where i just talk about whatever i want. i might add some shrines and other cool things in the future, we’ll have to see!</p>
+            enjoy your stay! :D
           <p><img src="https://media1.tenor.com/m/3Ooug_u-02QAAAAC/silly-dog-exploding-so-silly.gif" alt="dog hit by green screen missile" height="150"></p>
         </main>
         <aside class="rightSidebar">
@@ -106,11 +74,11 @@ data-config="{'skin':'skins/scmOrange/skin.css','volume':50,'autoplay':false,'sh
             <p>cool music you should check out</p>
             <!-- probably not a good idea to hard code the width but it works for now -->
              <!-- also wanna adjust volume but too lazy to set up script for that rn -->
-            <iframe width="170px" style="border:var(--secondary-color); border-style: dashed;" 
+            <iframe width="170px" style="border:var(--secondary-color); border-style: dashed;" title="youtube"
             src="https://www.youtube.com/embed/8YFqxS87Kfg">
             </iframe> 
             <p>previously shown music: </p>
-            <div class="statusContainer" style="overflow-y: scroll; width:150px; height: 150px; border:var(--secondary-color); border-style: dashed; background-color: var(--main-color); color: black;">
+            <div class="statusContainer" style="overflow-y: scroll; width:150px; height: 150px; border:var(--secondary-color); border-style: dashed; background-color: var(--main-color); background-image: var(--main-bg-image); color: black;">
               none yet
               </div>
           </div>

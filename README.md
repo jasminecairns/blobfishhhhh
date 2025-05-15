@@ -18,13 +18,17 @@ https://www.canva.com/colors/color-wheel/
 
 https://www.w3schools.com/howto/howto_css_tooltip.asp
 
+https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/
+
 
 
 ### things i wanna add
+- rebrand, likely
 ~~- blog !!!!!!!!~~ it's empty but it's there
 - make layout prettier :3c
 - shrines?
 - something unique
+- more graphics o yea
 
 ### saving for end
 - working links in professional info
