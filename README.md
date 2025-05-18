@@ -21,14 +21,14 @@ https://www.w3schools.com/howto/howto_css_tooltip.asp
 https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/
 
 ### things i wanna add
-- status.cafe
-- working rss feed
-- update box (also serves as rss feed)
+- ~~status.cafe~~
+- ~~working rss feed~~
 - ~~re-theming~~ (more or less done)
 - ~~blog !!!!!!!!~~ it's empty but it's there
     - first actual blog post
-- make layout cooler :3c
-    - more graphics o yea (more or less done but could have have a bit more)
+- ~~make layout cooler :3c~~
+    - ~~more graphics o yea~~ (more or less done)
+    - add original assets for better style
 - add art projects
     - add info about oc / worldbuilding
 - shrines?
@@ -40,7 +40,8 @@ https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header
 - guestbook
 - github link (and other links that may be missing)
 - hit counter
-- refine index text
+- ~~-refine index text~~ (mostly)
+- custom blinkie linking to here
 
 ### known issues:
 - loading issue
