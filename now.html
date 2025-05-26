@@ -3,22 +3,37 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>✨J C✨ </title>
+    <title> ✨🧡 blobfishhhhh 🌟💙 ♌︎●︎□︎♌︎♐︎♓︎⬧︎♒︎</title>
     <!-- The style.css file allows you to change the look of your web pages.
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
          <link rel="preload" as="style" href="/style.css">
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-    <script src="components/header.js" type="text/javascript" defer></script>
-    <script src="components/navbar.js" type="text/javascript" defer></script>
+    <script src="components/header.js"></script>
+    <script src="components/navbar.js" ></script>
+    <script src="components/footer.js"></script>
+    <link rel="alternate" type="application/rss+xml"
+      href="/feed.xml" title="RSS">
   </head>
   <body>
-  <!-- SCM Music Player https://www.scmplayer.net . removed for now for causing too many issues-->
-<!-- <script type="text/javascript" src="https://www.scmplayer.net/script.js" 
-data-config="{'skin':'skins/scmOrange/skin.css','volume':50,'autoplay':false,'shuffle':false,'repeat':0,'placement':'top','showplaylist':false,'playlist':[{'title':'Orange Lounge - Orange Lounge','url':'https://youtu.be/8YFqxS87Kfg?si=y4IdmV1U9WOVmjx8'},{'title':'Satellite Lovers - Sons of 1973','url':'https://youtu.be/EIBPGPz_u6s?si=NMrGw7uK5HJ8t0nQ'}]}" ></script> -->
-<!-- SCM Music Player script end -->
+        <header-component></header-component>
+        <!-- idk what to do with this other than decoration lol -->
+      <div class="flex">
+        <main>
+          STILL under construction
+        </main>
+        <!-- putting the right sidebar allows it to load at the same time as main and left sidebar -->
+         <!-- i dont know why this works but it does -->
+        <aside class="leftSidebar">
+          <div class="statusContainer">
+            <script src="//rss.bloople.net/?url=https%3A%2F%2Fblobfishhhhh.neocities.org%2Ffeed.xml&showtitle=false&type=js"></script>
+          </div>
+              <navbar-component></navbar-component>
+        </aside>
+    </div>
+    <footer-component></footer-component>
     <script> 
-      title = "🧡 J ✨ C 🌟";
+      title = "✨🧡 blobfishhhhh 🌟💙 ♌︎●︎□︎♌︎♐︎♓︎⬧︎♒︎";
       position = 0;
       function scrolltitle() {
           document.title = title.substring(position, title.length) + title.substring(0, position); 
@@ -31,17 +46,6 @@ data-config="{'skin':'skins/scmOrange/skin.css','volume':50,'autoplay':false,'sh
   <script>NekoType="fire"</script>
     <h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
     href="https://webneko.net">Neko</a></h1>
-    <header-component></header-component>
-        
-    <div class="flex">
-      <aside class="leftSidebar">
-        <navbar-component></navbar-component>
-        </aside>
-        <main>
-          <p>under construction</p>
-        </main>
-    </div>
-    <footer id="footer"> <a href="https://jc26.neocities.org/404"><img src="/assets/emotes/github-mark.png" alt="Site updates via Github" height="25px"></a></footer>
   </body>
   
 </html>
