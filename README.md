@@ -1,4 +1,4 @@
-# jc26
+# blobfishhhhh
 
 My Neocites site, inspired by the chaotic yet simpler approach of old web sites.  Mainly serves as a place to share my projects outside of school / work.
 
