@@ -3,69 +3,64 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>✨J C✨ </title>
+    <title> ✨🧡 blobfishhhhh 🌟💙 ♌︎●︎□︎♌︎♐︎♓︎⬧︎♒︎</title>
     <!-- The style.css file allows you to change the look of your web pages.
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
          <link rel="preload" as="style" href="/style.css">
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-    <script src="components/header.js" type="text/javascript" defer></script>
-    <script src="components/navbar.js" type="text/javascript" defer></script>
+    <script src="components/header.js"></script>
+    <script src="components/navbar.js" ></script>
+    <script src="components/footer.js"></script>
+    <link rel="alternate" type="application/rss+xml"
+      href="/feed.xml" title="RSS">
   </head>
   <body>
+        <header-component></header-component>
+        <!-- idk what to do with this other than decoration lol -->
+      <div class="flex">
+        <main>
+          <div style="overflow-y: scroll; height:400px;">
+            <section class="blog-post">
+                <h1>
+                    <img src="assets/emotes/sparkle.webp" alt="sparkly eyes"> first blog post! + some other stuff
+                </h1>
+                <h3>5/26/2025, 1:35 PM</h3> 
+                <!-- yes the time is hardcoded and it probablly shouldnt but im lazy -->
+               <p>hi chat! very excited to not only finally make a blog post, but also finally feel that my layout is done for now! of course, i’ll be doing adjustments in the future, but currently i feel happy with my setup!  i feel like i just finished setting up a personal journal, complete with pretty formatting and stickers &lt;3  HTML is a lovely and simple language, and i may have seen it in my sleep last week lol. (i was supposed to publish this last week too but better now than later!) </p>
+               <p>i don't have much to say other than i'm happy that i chose neocities for my lil corner of the internet.  i think part of this decision is because this site just focuses on things i do for fun.  i originally wanted this site to serve as a portfolio for both my school / work projects and hobby projects, but i decided to focus on the latter.  the main reasons for this are that i don’t have a proper place to publicly store my fun stuff, and it's more fitting for this place's vibe.  it's possible that this site's purpose may change in the future (again), but that’s its current goal. <small>i actually have a longer writeup about this situation in my drafts, but since it gets more detailed and personal, i decided it's better to just concisely mention it here ^^;; </small></p>
+               <p>so, what am i doing now?  well, aside from the 2 summer courses i’m taking, i am currently practicing my skills in drawing so that i can get 1 or 2 character ref sheets done by july for - you guessed it - artfight!  if i finally get done with that, i'll make a page for that and mention it in my RSS feed :3  i may also drop some worldbuilding stuff for my ocs…! this also means i’ll finally have content for my site lol.  there’s a lot of projects i wanna work on – both for this site and outside of it - but only the future can tell what i’ll deliver :3</p>
+               <p>(sorry that this blog entry is kind of a nothing burger :p this morseo serves as a “hey I’m stil here and doing cool stuff!” kinda thing)</p>
+            </section>
+            <!-- date, title -->
+             <!-- body -->
+
+        </div>
+        </main>
+        <!-- putting the right sidebar allows it to load at the same time as main and left sidebar -->
+         <!-- i dont know why this works but it does -->
+        <aside class="leftSidebar">
+          <div class="statusContainer">
+            <script src="//rss.bloople.net/?url=https%3A%2F%2Fblobfishhhhh.neocities.org%2Ffeed.xml&showtitle=false&type=js"></script>
+          </div>
+              <navbar-component></navbar-component>
+        </aside>
+    </div>
+    <footer-component></footer-component>
+    <script> 
+      title = "✨🧡 blobfishhhhh 🌟💙 ♌︎●︎□︎♌︎♐︎♓︎⬧︎♒︎";
+      position = 0;
+      function scrolltitle() {
+          document.title = title.substring(position, title.length) + title.substring(0, position); 
+          position++;
+          if (position > title.length) position = 0;
+          titleScroll = window.setTimeout(scrolltitle,170);
+      }
+      scrolltitle();
+      </script>
   <script>NekoType="fire"</script>
     <h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
     href="https://webneko.net">Neko</a></h1>
-        <!-- SCM Music Player https://www.scmplayer.net  removed cause its causing network / loading / accessilbility issues :( may add later with custom css or something)--> 
-      <!-- <script type="text/javascript" src="https://www.scmplayer.net/script.js"  -->
-      <!-- data-config="{'skin':'skins/scmOrange/skin.css','volume':50,'autoplay':false,'shuffle':false,'repeat':0,'placement':'top','showplaylist':false,'playlist':[{'title':'Orange Lounge','url':'https://youtu.be/8YFqxS87Kfg?si=y4IdmV1U9WOVmjx8'}]}" ></script> -->
-      <!-- SCM Music Player script end -->
-        <header-component></header-component>
-        
-      <div class="flex">
-        <aside class="leftSidebar">
-          <navbar-component></navbar-component>
-          <img src="assets/buttons/Tumblr_l_112863548855486.jpg" alt="text that says everyone loves a blogger guy. hearts surround text" style="margin-left: 55px">
-        </aside>
-        <main>
-          <div style="overflow-y: scroll; height:400px;">
-                <section class="blog-post">
-                    <h1>
-                        <img src="assets/emotes/sparkle.webp" alt="sparkly eyes"> 
-                    </h1>
-
-                   <p>text to show this is scrollable</p>
-                   <p>text to show this is scrollable</p>
-                   <p>text to show this is scrollable</p>
-                   <p>text to show this is scrollable</p>
-                   <p>text to show this is scrollable</p>
-                   <p>text to show this is scrollable</p>
-                   <p>text to show this is scrollable</p>
-                   <p>text to show this is scrollable</p>
-                   <p>text to show this is scrollable</p>
-                   <p>text to show this is scrollable</p>
-                   <p>text to show this is scrollable</p>
-                </section>
-                <!-- date, title -->
-                 <!-- body -->
-
-            </div>
-        </main>
-
-    </div>
-    <footer id="footer">hi, i'm a footer!</footer>
   </body>
-  <script type='text/javascript'> 
-  title = "🧡 J ✨ C 🌟";
-  position = 0;
-  function scrolltitle() {
-      document.title = title.substring(position, title.length) + title.substring(0, position); 
-      position++;
-      if (position > title.length) position = 0;
-      titleScroll = window.setTimeout(scrolltitle,170);
-  }
-  scrolltitle();
-  </script>
-  
   
 </html>

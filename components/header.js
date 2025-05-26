@@ -3,7 +3,7 @@ const headerTemplate = document.createElement('template');
 headerTemplate.innerHTML = `
     <style>    
         .header {
-        width: 100%;
+        width: 1200px;
         background-color: var(--secondary-dark2-color);
         /* header color here! */
         height: 150px;
@@ -20,7 +20,7 @@ headerTemplate.innerHTML = `
         </div>
           <div style="background: #e9910d;background: linear-gradient(180deg,#e9910d 0%, #e9390d 100%); border: var(--secondary-dark1-color); border-style: dashed;">
           <marquee behavior="scroll" direction="left" scrollamount="6" direction="left" height="20px">
-            <strong style="color: #000000">🔨 under construction :3 🔧˚　　　　✦　　　.　　. 　 ˚　..</strong>
+            <strong style="color: #000000">.　　. 　 ˚　pretend this says something funny ˚　　　　✦　　　..</strong>
             </marquee>
         </div>
     </div>

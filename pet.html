@@ -3,41 +3,49 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>✨J C✨ </title>
+    <title> ✨🧡 blobfishhhhh 🌟💙 ♌︎●︎□︎♌︎♐︎♓︎⬧︎♒︎</title>
     <!-- The style.css file allows you to change the look of your web pages.
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
          <link rel="preload" as="style" href="/style.css">
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="components/header.js"></script>
+    <script src="components/navbar.js" ></script>
+    <script src="components/footer.js"></script>
+    <link rel="alternate" type="application/rss+xml"
+      href="/feed.xml" title="RSS">
   </head>
   <body>
+        <header-component></header-component>
+        <!-- idk what to do with this other than decoration lol -->
+      <div class="flex">
+        <main>
+          <iframe width="314" height="321" scrolling="no" src="https://gifypet.neocities.org/pet/pet.html?name=creature&dob=1746510691&gender=b&element=Fire&pet=robot.gif&map=ozwomp.jpg&background=gify.jpg&tablecolor=black&textcolor=black" frameborder="0"></iframe>
+        </main>
+        <!-- putting the right sidebar allows it to load at the same time as main and left sidebar -->
+         <!-- i dont know why this works but it does -->
+        <aside class="leftSidebar">
+          <div class="statusContainer">
+            <script src="//rss.bloople.net/?url=https%3A%2F%2Fblobfishhhhh.neocities.org%2Ffeed.xml&showtitle=false&type=js"></script>
+          </div>
+              <navbar-component></navbar-component>
+        </aside>
+    </div>
+    <footer-component></footer-component>
+    <script> 
+      title = "✨🧡 blobfishhhhh 🌟💙 ♌︎●︎□︎♌︎♐︎♓︎⬧︎♒︎";
+      position = 0;
+      function scrolltitle() {
+          document.title = title.substring(position, title.length) + title.substring(0, position); 
+          position++;
+          if (position > title.length) position = 0;
+          titleScroll = window.setTimeout(scrolltitle,170);
+      }
+      scrolltitle();
+      </script>
   <script>NekoType="fire"</script>
     <h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
     href="https://webneko.net">Neko</a></h1>
-      <header-component></header-component>
-        
-      <div class="flex">
-        <aside class="leftSidebar">
-          <navbar-component></navbar-component>
-        </aside>
-        <main>
-            <iframe width="314" height="321" scrolling="no" src="https://gifypet.neocities.org/pet/pet.html?name=creature&dob=1746510691&gender=b&element=Fire&pet=robot.gif&map=ozwomp.jpg&background=gify.jpg&tablecolor=black&textcolor=black" frameborder="0"></iframe>
-        </main>
-
-    </div>
-    <footer id="footer">hi, i'm a footer!</footer>
   </body>
-  <script type='text/javascript'> 
-  title = "🧡 J ✨ C 🌟";
-  position = 0;
-  function scrolltitle() {
-      document.title = title.substring(position, title.length) + title.substring(0, position); 
-      position++;
-      if (position > title.length) position = 0;
-      titleScroll = window.setTimeout(scrolltitle,170);
-  }
-  scrolltitle();
-  </script>
-  
   
 </html>

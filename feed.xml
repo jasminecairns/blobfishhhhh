@@ -7,6 +7,13 @@
         <description>personal blog of stuff and things</description>
         <language>en-us</language>
             <item>
+                <title>blog</title>
+                <pubDate>Mon, 26 May 2025 14:11:00 EST</pubDate>
+                <link>https://blobfishhhhh.neocities.org/blog.html</link>
+                <guid>https://blobfishhhhh.neocities.org/blog.html</guid>
+                <description>finished layout, added blog post</description>
+            </item>
+            <item>
                 <title>homepage</title>
                 <pubDate>Thu, 15 May 2025 07:52:00 EST</pubDate>
                 <link>https://blobfishhhhh.neocities.org/</link>

@@ -29,7 +29,12 @@ navbarTemplate.innerHTML = `
             font-weight: 800;
             text-decoration: none;
             color: var(--secondary-dark2-color);
+            transition: text-shadow 0.5s;
             /* this removes the underline */
+        }
+
+        .navbar li a:hover {
+          text-shadow: 2px 2px 5px var(--secondary-color);
         }
 
         .tooltip {
