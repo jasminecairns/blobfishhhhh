@@ -4,7 +4,7 @@ My Neocites site, inspired by the chaotic yet simpler approach of old web sites.
 
 If I'm missing credit for literally anything on this site, please let me know!
 
-All opnions are my own and are not endorsed by mys school or employers.
+All opnions are my own and are not endorsed by my school or employers.
 
 ### Various resources I used (not including those in other directories):
 
@@ -33,9 +33,9 @@ https://www.flaticon.com/free-icons/pixel
     - github rss feed
 - ~~re-theming~~ (more or less done)
 - ~~blog !!!!!!!!~~ it's empty but it's there
-    - first actual blog post
+    - ~~first actual blog post~~
 - ~~make layout cooler :3c~~
-    - ~~more graphics o yea~~ (more or less done)
+    - ~~more graphics o yea~~
     - add original assets for better style (a few added so far)
 - add art projects
     - add info about oc / worldbuilding
@@ -55,6 +55,7 @@ https://www.flaticon.com/free-icons/pixel
 ### known issues:
 - loading issue
     - when going to a different page, it reloads the whole page, which causes uncomfortable flashing if refreshed / loaded rapidly
+        - lazily fixed with background colors that are similar to the background images     
         - attempted to resolve this by linking to html files instead of links, but this doesnt work. at least allows me to run this site locally
     - loading is generally a little slow, but this is more forgivable due to this site being graphics heavy (and i want it to be graphics heaby :3)
 - scm music player issues (removed player for now, replaced with youtube embed)
