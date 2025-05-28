@@ -3,5 +3,5 @@ package*
 professional-info.html
 LICENSE
 *.kra
-*.DS_Store
+.DS_Store
 .git*
