@@ -4,3 +4,4 @@ professional-info.html
 LICENSE
 *.kra
 *.DS_Store
+.git*
