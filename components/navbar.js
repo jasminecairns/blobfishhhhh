@@ -76,7 +76,7 @@ navbarTemplate.innerHTML = `
     
     </style>
     <div style="display: flex;">
-    <img src="assets/dividers/blue-divider-short.gif" alt="blue flames" style="margin-bottom: 15px; margin-left: 50px; margin-top: 5px;">
+    <img src="/assets/dividers/blue-divider-short.gif" alt="blue flames" style="margin-bottom: 15px; margin-left: 50px; margin-top: 5px;">
         <ul class="navbar">
             <li>
               <div class="tooltip"><a href="/index.html"><span style='font-size:3em;'>⌂</span></a>
@@ -84,7 +84,7 @@ navbarTemplate.innerHTML = `
               </div>
             </li>
             <li>
-              <div class="tooltip"><a href="/projects.html"><span style='font-size:3em;'>✎</span></a>
+              <div class="tooltip"><a href="/projects"><span style='font-size:3em;'>✎</span></a>
               <span class="tooltiptext">projects</span>
               </div>
             </li>
@@ -99,7 +99,7 @@ navbarTemplate.innerHTML = `
               </div>
             </li>
           </ul>
-          <img src="assets/dividers/blue-divider-short-flipped.gif" alt="blue fames" style="margin-bottom: 15px; margin-top: 5px;">
+          <img src="/assets/dividers/blue-divider-short-flipped.gif" alt="blue fames" style="margin-bottom: 15px; margin-top: 5px;">
           </div>
 `;
 

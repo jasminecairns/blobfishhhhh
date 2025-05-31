@@ -11,6 +11,8 @@ All opnions are my own and are not endorsed by my school or employers.
 https://goblin-heart.net/sadgrl/learn/
 (the layout builder was very useful and quite a bit of code was stolen from it lol)
 
+https://www.w3schools.com/html/default.asp 
+
 https://tenor.com/
 
 https://adriansblinkiecollection.neocities.org/
@@ -21,11 +23,11 @@ https://www.coderstool.com/color-scheme-generator
 https://www.canva.com/colors/color-wheel/
 https://oklch.com/#0.7,0.1,257,100 
 
-https://www.w3schools.com/howto/howto_css_tooltip.asp
-
 https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/
 
 https://www.flaticon.com/free-icons/pixel
+
+https://gifcity.carrd.co/#bgs 
 
 ### things i wanna add
 - ~~status.cafe~~
@@ -54,6 +56,7 @@ https://www.flaticon.com/free-icons/pixel
 
 ### known issues:
 - loading issue
+    - maruqee in header doesn't move untill a couple seconds after page loaded
     - when going to a different page, it reloads the whole page, which causes uncomfortable flashing if refreshed / loaded rapidly
         - lazily fixed with background colors that are similar to the background images     
         - attempted to resolve this by linking to html files instead of links, but this doesnt work. at least allows me to run this site locally

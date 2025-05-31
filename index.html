@@ -10,8 +10,9 @@
          <link rel="preload" as="style" href="/style.css">
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
     <script src="components/header.js"></script>
+    <link rel="preload" href="components/header.js" as="script">
     <script src="components/navbar.js" ></script>
-    <script src="components/footer.js"></script>
+    <script src="components/footer.js" defer></script>
     <link rel="alternate" type="application/rss+xml"
       href="/feed.xml" title="RSS">
   </head>
@@ -28,12 +29,13 @@
           there isn’t too much see right now beyond the homepage, but i hope you enjoy your stay regardless :D
           <p style="text-align: center;"><img src="https://media1.tenor.com/m/ICgAh7XBrGsAAAAC/pillow-pet-pillow-pet-explosion.gif" alt="dog plushie exploding green screen" height="150"></p>
           <p style="text-align: center;"><img src="assets/dividers/rainbowchangedivider.gif" alt="rainbow divider"></p>
-          <p style="text-align: center;">here's my button if you would like to link back to me!: <br> <a href="https://blobfishhhhh.neocities.org/"><img src="/assets/buttons/blobfishhhhh.gif" alt="blobfishhhhh button"></a></p>
+          <p style="text-align: center;">here's my button if you would like to link back to me!: </p>
+          <p style="text-align: center;"><a href="https://blobfishhhhh.neocities.org/"><img src="/assets/buttons/blobfishhhhh.gif" alt="blobfishhhhh button"></a></p>
         </main>
         <!-- putting the right sidebar allows it to load at the same time as main and left sidebar -->
          <!-- i dont know why this works but it does -->
         <aside class="rightSidebar">
-          <button id="toro" style="background-color: var(--main-dark-color); border: none; cursor: pointer;">
+          <button id="toro" style="background-color: transparent; border: none; cursor: pointer;">
             <img src="https://media.tenor.com/p4Sdvqt3j2UAAAAi/kitty-hi.gif" width="70" height="100" alt="Toro the cat waving and smiling">
           </button> 
           <audio id="myAudio" src="https://files.catbox.moe/gi561z.wav"></audio>
@@ -47,24 +49,36 @@
             <a href="https://www.youtube.com/watch?v=lFLyfRKsMaU" target="_blank"><img src="assets/buttons/fish.gif" width="150" height="20" alt="blinkie of pixel art waves with text overalyed saying i like fish"></a>
             <img src="assets/buttons/emoticons.gif" width="150" height="20" alt="blinkie showing various emoticons, and then shows text saying i support emotiocons">
             <img src="assets/buttons/fishing.gif" width="150" height="20" alt="blinkie that says i rather be fishing. a fishbone is on the left">
+            <img src="/assets/buttons/iviewsource.gif" width="150" height="20" alt="purple and yellow blinkie that says i view source. a mouse is to the left">
+            <img src="/assets/buttons/jerma-sparkleon.gif" width="150" height="20" alt="blinkie of hit streamer jerma985 posing and saying sparkle on!">
             <a href="http://www.hat.net/abs/noclick/" ><img src="assets/buttons/noclick.gif" alt="[Don't click here!]" ></a>
             <a href="https://jigsaw.w3.org/css-validator/check/referer">
             <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!"> </a>
             <a href="http://validator.w3.org/feed/check.cgi?url=https%3A//blobfishhhhh.neocities.org/feed.xml"><img src="assets/buttons/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed"></a>
             <img src="assets/buttons/pepsi.gif" alt="this site is best viewed with PEPSI">
+            <a href="https://www.youtube.com/watch?v=IiDQwQQsrL8"><img src="/assets/buttons/boulevard.gif" alt="stamp of an ms paint smiley face lipsyncing to a song. can you guess?"></a>
+            <img src="/assets/buttons/silly.png" alt="smiley face on the computer saying going online to be silly">
+            <img src="/assets/buttons/ilovesnacking.gif" alt="blinkie that says i love snacking. shows pixel art of various snacks">
+            <img src="/assets/buttons/saulstamp.gif" alt="3d saul meme stamp">
           </div>
           <div class="music">
             <p style="color:white">song/album/playlist of the week <small>(or month if i forget)</small>: </p>
             <!-- probably not a good idea to hard code the width but it works for now -->
              <!-- also wanna adjust volume but too lazy to set up script for that rn -->
+              <!-- lets try changing this every friday -->
             <iframe width="220" height="156" style="border:var(--secondary-color); border-style: dashed;" title="youtube"
-            src="https://www.youtube.com/embed/8YFqxS87Kfg">
+            src="https://www.youtube-nocookie.com/embed/D0kc0OZ7M0Y?si=IiNtsD7MBwNqF_P_">
             </iframe> 
+            
             <p style="color:white">previously shown music: </p>
             <div class="statusContainer">
-              none yet
+              <ul>
+                <li><a href="https://www.youtube.com/watch?v=8YFqxS87Kfg">Orange Lounge - Orange Lounge (S/T) (Remastered, higher quality)</a></li>
+              </ul>
               </div>
           </div>
+          <br>
+          <img src="/assets/buttons/badapple.gif" alt="bad apple. all of it">
         </aside>
         <aside class="leftSidebar">
           <div class="statusContainer">
@@ -78,6 +92,7 @@
               <a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-38628-ed" target="_blank"><img src="assets/buttons/guestbook.jpg" alt="guestbook"></a>
               <a href="https://www.yourworldoftext.com/~blobfishhhhh/" target="_blank"><img src="assets/buttons/graffiti.jpg" alt="graffiti (world of text)"></a>
             <p style="color: white;">hits: <script src="https://counter.websiteout.com/js/3/0/0/0"></script></p>
+            <img src="/assets/buttons/tinyweezer.png" width="200" alt="tiny weezer stamp">
         </aside>
     </div>
     <footer-component></footer-component>
