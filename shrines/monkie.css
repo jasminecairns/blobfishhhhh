@@ -1,0 +1,88 @@
+:root {
+  --bg-image-red: url("red-scroll2.png");
+  background: url("monkie-bg.png") no-repeat fixed center;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: ArtBrush;
+  src: url("/fonts/Artbrush.ttf");
+  font-weight: 700;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+
+  .title {
+    background-color: transparent;
+    grid-column: 1 / span 3;
+    text-align: center;
+    height: auto  ;
+  }
+
+  .title .navbar {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-left: 200px;
+    margin-right: 70px;
+    gap:3px;
+  }
+
+  .title .navbar button {
+    height: 30px;
+    font-size: 1.2em;
+    border-color: #8b0000;
+    color: white;
+    text-shadow: 0px 0px 2px #8b0000;
+
+  }
+
+  .title .navbar button:hover {
+    border-color: cyan;
+    border-right-color: #fb74ec;
+    border-bottom-color: #fb74ec;
+    box-shadow: -1px -1px 2px cyan, 1px 1px 2px #fb74ec;
+  }
+
+  @keyframes toBg{
+    from {filter:opacity(0%) }
+    to {filter:opacity(100%) }
+  }
+
+  .main { 
+    /* feeling very eh abt the font but it sort of works */
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background: var(--bg-image-red) no-repeat; 
+    border-radius: 25px;
+    width: 600px;
+    padding: 76px;
+    margin-left: auto;
+    font-size: large;
+    animation-name: toBg;
+    animation-duration: 1s;
+    display: block;
+  }
+
+  .section {
+    display: block;
+    height: 1000px;
+    overflow-y: scroll;
+  }
+
+  .section a {
+    color: lightgoldenrodyellow;
+  }
+
+  h1, h2 {
+    font-family: 'Artbrush',"PixelOperator8", "Courier New Bold", Courier, monospace;
+  }
+
+  /* .footer {
+    -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient (black, transparent);
+  } */

@@ -94,8 +94,8 @@ navbarTemplate.innerHTML = `
               </div>
             </li>
             <li>
-              <div class="tooltip"><a href="/now.html"><span style='font-size:3em;'>‼</span></a>
-              <span class="tooltiptext">now</span>
+              <div class="tooltip"><a href="/shrines"><span style='font-size:3em;'>❣</span></a>
+              <span class="tooltiptext">shrines</span>
               </div>
             </li>
           </ul>
